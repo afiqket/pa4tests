@@ -32,7 +32,7 @@ int main(int argc, char** argv)
 	thread_join(tid1);
 	thread_join(tid2);
 
-	printf(1, "Test done. There should be no crashes. \nCurrent size = %d. This should be equal to initial size + %d.\n", sbrk(0), ITERS*BYTES);
+	printf(1, "Test done. There should be no crashes. \nCurrent size = %d. This should be equal to initial size + %d.\n", sbrk(0), 2*ITERS*BYTES);
 
 	exit();
 }
