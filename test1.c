@@ -46,7 +46,7 @@ main(int argc, char *argv[])
     if (tid2 == 0) {
         // In the child thread
         sleep(20);
-        printf(1, "4. Child thread 2: clone() returned 0, pid = %d\n", getpid());
+        printf(1, "5. Child thread 2: clone() returned 0, pid = %d\n", getpid());
         exit(); 
     }
 
@@ -57,7 +57,7 @@ main(int argc, char *argv[])
         printf(1, "ERROR: clonetest: first join failed\n");
         exit();
     } else {
-        printf(1, "5. Parent: successfully joined thread tid = %d\n", jtid1);
+        printf(1, "4. Parent: successfully joined thread tid = %d\n", jtid1);
     }
 
     jtid2 = join();
